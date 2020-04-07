@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Version>0.1.0-alpha</Version>
+    <Authors>Eric G. Miller</Authors>
+    <Company>State of California, Department of Fish and Wildlife</Company>
+    <Description>An demo of the Fish Planting API using in-memory data.</Description>
+    <Copyright>Copyright (c) 2020, State of California, Department of Fish and Wildlife</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FishPlanting.Api\FishPlanting.Api.csproj" />
+  </ItemGroup>
+
+</Project>

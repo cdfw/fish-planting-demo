@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>0.1.0-alpha</Version>
+    <Authors>Eric G. Miller</Authors>
+    <Company>State of California, Department of Fish and Wildlife</Company>
+    <Copyright>Copyright (c) 2020, State of California, Department of Fish and Wildlife</Copyright>
+    <Description>Fish Planting public web application.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FishPlanting.Api.Demo\FishPlanting.Api.Demo.csproj" />
+    <ProjectReference Include="..\FishPlanting.Api\FishPlanting.Api.csproj" />
+  </ItemGroup>
+
+
+</Project>

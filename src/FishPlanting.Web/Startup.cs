@@ -21,12 +21,12 @@ namespace FishPlantingApi
         }
 
         public IConfiguration Configuration { get; }
-
+        
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
+            services.AddRazorPages();
             services.AddTransient<FishPlanting.Api.IFishPlantingService, FishPlanting.Api.Demo.DemoFishPlantingService>();
         }
 
@@ -37,8 +37,14 @@ namespace FishPlantingApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
+            }
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
@@ -47,6 +53,7 @@ namespace FishPlantingApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapRazorPages();
             });
         }
     }

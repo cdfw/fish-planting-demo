@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations;
 namespace FishPlantingApi.Controllers
 {
     [ApiController]
-    [Route("")]
+    [Route("api")]
     public class DefaultController
         : Controller
     {
